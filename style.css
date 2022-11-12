@@ -4,6 +4,16 @@ body {
   box-sizing: border-box;
   font-size: 20px;
 }
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
 
 main .calculator {
   display: grid;
@@ -11,13 +21,14 @@ main .calculator {
   grid-template-rows: repeat(5, 1fr);
   margin: 0px 10px 0px 10px;
   /* percentage is dynamic so is em (somewhat I'm not sure) */
-  max-width: 5em;
-  max-height: 10em;
+  width: 6em;
+  height: 8em;
   font-size: 4em;
+  border: 5px solid black;
 }
 
 .calculator .output-bar {
-  border: 1.5px solid blue;
+  border: 2px solid blue;
   grid-column: 1 / span 4;
   grid-row: 1 / span 1;
   display: grid;
@@ -26,9 +37,9 @@ main .calculator {
 }
 
 .calculator .operator, .digit{
-  border: 1px solid green;
+  border: 1.5px solid green;
   display: grid;  
   justify-content: center;
   align-content: center;
-  cursor: pointer
+  cursor: pointer;
 }
