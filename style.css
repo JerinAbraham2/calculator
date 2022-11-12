@@ -3,6 +3,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 main {
   display: flex;
@@ -42,4 +46,9 @@ main .calculator {
   justify-content: center;
   align-content: center;
   cursor: pointer;
+}
+#home {
+  margin: 50px auto 20px auto;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.5em;
 }
