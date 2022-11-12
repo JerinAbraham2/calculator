@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main .calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 0px 5em 0px 5em;
+  width: 50%;
+}
+
+.calculator .output-bar {
+  border: 1px solid blue;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+}
+.calculator .digit {
+  border: 1px solid green;
+  height: 2.5em;
+}
+.calculator .operator {
+  border: 1px solid green;
+}
