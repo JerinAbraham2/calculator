@@ -84,3 +84,9 @@ const whichButtonClicked = () => {
 const main = (() => {
   whichButtonClicked();
 })();
+
+// more info was clicked
+const moreInfo = () => {
+  const info = document.querySelector("#info");
+  info.innerHTML = info.innerHTML + "<br> Features: <br> - Keyboard input <br> - Click input <br> - Dynamic output"
+} 

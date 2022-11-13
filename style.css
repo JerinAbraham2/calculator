@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 main {
   display: flex;
@@ -47,8 +47,21 @@ main .calculator {
   align-content: center;
   cursor: pointer;
 }
-#home {
+
+#informational {
+  padding: 20px;
+  margin: 2em 0 0 0;
+  width: 50%;
+  border: 0.2em solid black
+}
+
+.button {
   margin: 50px auto 20px auto;
   padding: 10px 15px 10px 15px;
   font-size: 1.5em;
+}
+
+.more-info {
+  margin: 20px 0 0 0;
+  font-size: 1em;
 }
