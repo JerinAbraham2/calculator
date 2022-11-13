@@ -2,6 +2,7 @@
 (() => {
   // by not declaring let, var or const, you are making it a global variable
   prevPressedDigit = "";
+  clickMore = false;
 })();
 
 const OutputChange = (output) => {
@@ -60,10 +61,7 @@ const buttonClick = (e) => {
 };
 
 const keyClick = (e) => {
-  console.log("a key has been pressed");
-  console.log(e.key);
   OutputChange(e.key);
-  2;
 };
 
 const whichButtonClicked = () => {
@@ -72,21 +70,25 @@ const whichButtonClicked = () => {
   buttons.forEach((el) => {
     el.addEventListener("click", buttonClick);
   });
-
   document.addEventListener("keydown", keyClick);
-  // for (let i = 0; i < buttons.length;) {
-
-  // }
-  // you can also convert them into an array
-  // const buttons = [...document.querySelectorAll(".digit")];
 };
 
 const main = (() => {
+
   whichButtonClicked();
+  // add info
+  document.querySelector("#info").innerHTML = "A simple calculator app, created using JavaScript, CSS and HTML";
 })();
 
 // more info was clicked
 const moreInfo = () => {
   const info = document.querySelector("#info");
-  info.innerHTML = info.innerHTML + "<br> Features: <br> - Keyboard input <br> - Click input <br> - Dynamic output"
-} 
+  if (clickMore) {
+    info.innerHTML = info.innerHTML = "A simple calculator app, created using JavaScript, CSS and HTML";
+    clickMore = false;
+    return
+  } else {
+    info.innerHTML = info.innerHTML + "<br><br> Features: <br> - Keyboard input <br> - Click input <br> - Dynamic output";
+    clickMore = true;
+  }
+};

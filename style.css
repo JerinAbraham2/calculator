@@ -27,7 +27,7 @@ main .calculator {
   /* percentage is dynamic so is em (somewhat I'm not sure) */
   width: 6em;
   height: 8em;
-  font-size: 4em;
+  font-size: 3em;
   border: 5px solid black;
 }
 
@@ -49,19 +49,20 @@ main .calculator {
 }
 
 #informational {
-  padding: 20px;
+  padding: 0 1em 1em 1em;
   margin: 2em 0 0 0;
   width: 50%;
   border: 0.2em solid black
 }
 
 .button {
-  margin: 50px auto 20px auto;
+  margin: 30px auto 20px auto;
   padding: 10px 15px 10px 15px;
   font-size: 1.5em;
 }
 
 .more-info {
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
+  padding: 5px;
   font-size: 1em;
 }
