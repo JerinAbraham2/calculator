@@ -1,7 +1,7 @@
 # Calculator App
 
 ## Description
-Simple calculator app
+Simple calculator app 
 Originally made for a challenge by Kruti Patel, the challenge is located in the pdf inside this repository
 
 ## Features
